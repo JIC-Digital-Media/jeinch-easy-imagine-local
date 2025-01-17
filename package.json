@@ -1,0 +1,55 @@
+{
+  "version": "0.0.0",
+  "keywords": [],
+  "type": "commonjs",
+  "exports": {
+    "./package.json": "./package.json",
+    "./strapi-server": {
+      "types": "./dist/server/src/index.d.ts",
+      "source": "./server/src/index.ts",
+      "import": "./dist/server/index.mjs",
+      "require": "./dist/server/index.js",
+      "default": "./dist/server/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "strapi-plugin build",
+    "watch": "strapi-plugin watch",
+    "watch:link": "strapi-plugin watch:link",
+    "verify": "strapi-plugin verify",
+    "test:ts:back": "run -T tsc -p server/tsconfig.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@strapi/strapi": "^5.8.0",
+    "@strapi/sdk-plugin": "^5.3.0",
+    "prettier": "^3.4.2",
+    "@strapi/typescript-utils": "^5.8.0",
+    "typescript": "^5.7.3"
+  },
+  "peerDependencies": {
+    "@strapi/strapi": "^5.8.0",
+    "@strapi/sdk-plugin": "^5.3.0"
+  },
+  "strapi": {
+    "kind": "plugin",
+    "name": "jeinch-strapi-plugin-easy-imagine-local",
+    "displayName": "Jeinch - Easy Imagine Local",
+    "description": "Dynamically resize, format and optimize local images based on url modifiers"
+  },
+  "name": "jeinch-strapi-plugin-easy-imagine-local",
+  "description": "Dynamically resize, format and optimize local images based on url modifiers",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/JIC-Digital-Media/jeinch-strapi-plugin-easy-imagine-local.git"
+  },
+  "bugs": {
+    "url": "https://github.com/JIC-Digital-Media/jeinch-strapi-plugin-easy-imagine-local/issues"
+  },
+  "homepage": "https://github.com/JIC-Digital-Media/jeinch-strapi-plugin-easy-imagine-local#readme",
+  "author": "bimo-jic <154310961+bimo-jic@users.noreply.github.com>"
+}
