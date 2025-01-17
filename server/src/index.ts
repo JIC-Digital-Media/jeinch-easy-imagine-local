@@ -18,13 +18,13 @@ import services from './services';
 
 export default {
   register,
-  bootstrap,
-  destroy,
+  // bootstrap,
+  // destroy,
   config,
-  controllers,
-  routes,
-  services,
-  contentTypes,
-  policies,
+  // controllers,
+  // routes,
+  // services,
+  // contentTypes,
+  // policies,
   middlewares,
 };
